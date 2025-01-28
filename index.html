@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nithin Oddepalli - Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .profile-pic {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form label {
+            margin-top: 10px;
+        }
+        form input, form textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Nithin Oddepalli</h1>
+    <p>Welcome to My World</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container" id="home">
+    <h2>Introduction</h2>
+    <p>Hi! I’m Nithin, a passionate software developer and tech enthusiast. I love exploring new technologies and creating innovative solutions. Welcome to my personal space where you can learn more about me and my work!</p>
+    <img src="profile-pic.jpg" alt="John Doe" class="profile-pic">
+</div>
+
+<div class="container" id="about">
+    <h2>About Me</h2>
+    <p>I’m a software developer based in india, with a degree in Computer Science from NIT. I have a strong passion for web development and enjoy working on both front-end and back-end projects.</p>
+    <h3>Hobbies/Interests</h3>
+    <ul>
+        <li>Hiking in the great outdoors</li>
+        <li>Playing guitar and writing music</li>
+        <li>Volunteering at local coding bootcamps</li>
+    </ul>
+    <h3>Fun Facts</h3>
+    <ul>
+        <li>I once backpacked through Europe for three months.</li>
+        <li>I can play five musical instruments.</li>
+        <li>My favorite food is sushi!</li>
+    </ul>
+</div>
+
+<div class="container" id="projects">
+    <h2>Projects</h2>
+    <h3>Portfolio</h3>
+    <ul>
+        <li><strong>Personal Blog:</strong> A blog where I share my thoughts on technology, travel, and more. <a href="#">Link to Blog</a></li>
+        <li><strong>Portfolio Website:</strong> This website showcases my skills and projects. <a href="#">Link to Website</a></li>
+        <li><strong>Mobile App:</strong> An app designed to help users track their fitness goals. <a href="#">Link to App</a></li>
+    </ul>
+</div>
+
+<div class="container" id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <input type="submit" value="Submit">
+    </form>
+    <h3>Connect with me:</h3>
+    <ul>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">GitHub</a></li>
+    </ul>
+</div>
+
+<footer>
+    <p>© 2024 Nithin Oddepalli. All rights reserved.</p>
+</footer>
+
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        alert("Thank you for your message, " + document.getElementById("name").value + "!");
+        this.reset(); // Clear the form after submission
+    });
+</script>
+
+</body>
+</html>
